@@ -1,0 +1,31 @@
+"Emulator/Dolphin":
+  files:
+    "<home>/.var/app/org.DolphinEmu.dolphin-emu/data/dolphin-emu":
+      tags:
+        - save
+      when:
+        - os: linux
+    "<home>/.var/app/org.DolphinEmu.dolphin-emu/data/dolphin-emu/StateSaves":
+      tags:
+        - save-states
+      when:
+        - os: linux
+"Emulator/Eden":
+  files:
+    "<home>/.local/share/eden/nand/user/save/":
+      tags:
+        - save
+      when:
+        - os: linux
+"Emulator/Ryujinx":
+  files:
+    "<home>/.config/Ryujinx/bis/user/save":
+      tags:
+        - save
+      when:
+        - os: linux
+    "<home>/.config/Ryujinx/bis/user/saveMeta":
+      tags:
+        - save-meta
+      when:
+        - os: linux
